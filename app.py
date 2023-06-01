@@ -42,10 +42,8 @@ def select_weapon(weapons: list) -> str:
         print(f'''    {count_weapon}) {weapon}''')
         count_weapon += 1
 
-    
-
 # FUNCTION TO START GAME
-def start_game():
+def start_game() -> None:
     select_player(names)
     set_timer(2, 1)
     print(f"Welcome To Legendary Treasure {player}")
@@ -62,7 +60,7 @@ and claim the treasure
 ''')
     set_timer(5, 1)
 
-def game_menu():
+def game_menu() -> None:
     game_instruction()
     start_game()
     
